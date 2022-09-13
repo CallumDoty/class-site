@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin:30%;
+    background-color: blue;
+    font-family: 'Antonio', sans-serif;
+
+}
+.border{
+    background-color:aquamarine;
+    width: 30%;
+    height: 30px;
+    padding: 30px;
+    border: 14px solid navy;
+    margin: 40px;
+    box-sizing: border-box;
+    margin: 50px auto;
+    
+}
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
