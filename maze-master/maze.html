@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Maze Demonstrator</title>
+		<link rel="stylesheet" type="text/css" href="css/maze.css">
+	</head>
+	<body>
+		<div id="optionsDiv">
+			
+			<label class="label">Maze Width:<input type="number" name="mazeWidth" id="mazeWidthInput" min="1" max="100" value="20"/></label> |
+			<label class="label">Maze Height:<input type="number" name="mazeHeight" id="mazeHeightInput" min="1" max="100" value="20"></label> |
+			
+			<label class="label">
+				Maze Generation Algorithm: 
+				<select id="mazeGenerationAlgorithmSelect">
+					<option value="growingTree">Growing Tree</option>
+					<option value="prims">Prim's</option>
+				</select> 
+			</label> |		
+
+			<label class="label">
+				Display: 
+				<select id="mazeDisplaySelect">
+						<option value="borders" selected="selected">Table with borders (recommended)</option>
+						<option value="compositeImages">Table with composite images</option>
+						<option value="images">Table with images</option>
+						<option value="codes">Maze cell codes (no robot)</option>
+				</select> 
+			</label> |
+			
+			<label class='label'>
+				<input type="button" value="Go!" onclick='generateMaze()'>
+			</label>
+		</div>
+			
+		<div id="robotOptionsDiv">
+			<label class="label">
+				Robot Algorithm: 
+				<select id="robotAlgorithmSelect">
+					<option value="randomMouse">Random Mouse</option>
+					<option value="wallFollower" selected="selected">Wall Follower</option>
+					<option value="recursiveBacktracking">Recursive Backtracking</option>
+				</select> 
+			</label> |			
+			
+			<label class="label">Robot delay (ms):<input type="number" name="robotDelay" id="robotDelayInput" min="1" max="2000" step="10" value="100"></label> |
+			
+			<label class='label'>
+				<input type="button" value="Solve!" onclick='solveMaze()'>
+			</label>
+		</div>
+			
+		<div id="mazeDisplay"></div>
+		
+		</body>
+</html>
+
+<!-- For when compiling TS into a single JS file -->
+<script type="text/javascript" src="compiledJs/maze.js"></script>
+
+
+<!-- For when compiling TS into multiple JS files in an output directory -->
+<!--
+<script type="text/javascript" src="compiledJs/mazeUtilities.js"></script>
+<script type="text/javascript" src="compiledJs/maze/cell.js"></script>
+<script type="text/javascript" src="compiledJs/maze/maze.js"></script>
+<script type="text/javascript" src="compiledJs/maze/firstPersonMaze.js"></script>
+<script type="text/javascript" src="compiledJs/robot/mazeRobot.js"></script>
+<script type="text/javascript" src="compiledJs/robot/robotAlgorithm.js"></script>
+<script type="text/javascript" src="compiledJs/robot/randomMouseRobotAlgorithm.js"></script>
+<script type="text/javascript" src="compiledJs/robot/wallFollowerRobotAlgorithm.js"></script>
+<script type="text/javascript" src="compiledJs/robot/recursiveBacktrackingRobotAlgorithm.js"></script>
+<script type="text/javascript" src="compiledJs/viewers/mazeViewer.js"></script>
+<script type="text/javascript" src="compiledJs/viewers/borderMazeViewer.js"></script>
+<script type="text/javascript" src="compiledJs/viewers/imageMazeViewer.js"></script>
+<script type="text/javascript" src="compiledJs/viewers/compositeImageMazeViewer.js"></script>
+<script type="text/javascript" src="compiledJs/viewers/codesMazeViewer.js"></script>
+<script type="text/javascript" src="compiledJs/mazeController.js"></script>
+-->
+

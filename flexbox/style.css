@@ -1,0 +1,31 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin:0;
+
+}
+
+.container{
+    background-color: aqua;
+    height: 400px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+    align-content:flex-start;
+    gap: 30px;
+    
+
+}
+
+.item{
+    background-color: blueviolet;
+    width: 200px;px;
+    padding:40px;
+    border: 1px coral
+    
+}
