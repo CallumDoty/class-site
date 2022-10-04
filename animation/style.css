@@ -1,0 +1,89 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin:0;
+    background-color: beige;
+}
+
+.flex{
+    display:flex;
+    width:100vw;
+    height: 100vh;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-evenly;
+
+}
+.circle{
+    width:400px;
+    height: 400px;
+    background-color: blue;
+    border-radius: 200px;
+    animation-name: pulse;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+
+.square{
+    width: 400px;
+    height: 400px;
+    background-color: brown;
+    animation-name: spin;
+    animation-duration: .5s;
+    animation-iteration-count: infinite;
+    animation-direction:reverse;
+    animation-timing-function: linear;
+    rotate:50px;
+}
+
+
+@keyframes pulse {
+    0%{
+        background-color: blue;
+        transform: scale(1);
+    
+    }
+
+    100%{
+        background-color: aqua;
+        transform: scale(1.5);
+    }
+}
+
+@keyframes spin {
+
+    0%{
+        transform: rotate(45deg)
+    }
+    100%{
+        transform:rotate(360deg)
+    }
+
+}
+
+
+
+
+
+
+.mover{
+    width:40px;
+    height:40px;
+    position: fixed;
+    background-color: black;
+    bottom:0;
+    left:0;
+    animation: move 4s infinite;
+}
+@keyframes move {
+    0%{
+        transform: translateX(-200px)
+    }
+    100%{
+        transform: translateX(100vw)
+    }
+}
