@@ -1,0 +1,90 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin:100;
+    background-color: yellow;
+
+}
+
+body.dark{
+  background-color: firebrick;
+}
+
+.box{
+   width: 50px;
+   height: 50px;
+   background-color: rgb(30, 30, 22);
+   border: 3px solid;
+   transition: transform 1s;
+   animation: spin 10s infinite linear;
+   animation-play-state: paused;
+}
+
+
+.box.dark{
+  background-color: blueviolet;
+  transition: background-color 1s;
+}
+
+.box.spin{
+  animation-play-state: running;
+}
+
+
+.flex{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 300px;
+}
+
+  button {
+    padding: 10px;
+    border: 3px solid;
+    cursor:grab;
+    background-color: blue;
+    transition: background-color 2s;
+  }
+ 
+  button:hover {
+    background-color: blueviolet;
+  }
+
+  button:active {
+    background-color: brown;
+  }
+
+  
+
+.box.glow{
+  background-color: beige;
+  box-shadow: 0 0 10px 10px goldenrod;
+}
+
+body.glow{
+  background-color: darkgreen;
+}
+
+.rectangle{
+  width: 900px;
+  height: 400px;
+  background-color: beige;
+  position:fixed;
+  bottom: 6px;
+  right: 6px;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+
+
+
+@keyframes spin {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}

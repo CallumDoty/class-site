@@ -1,0 +1,69 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin:100;
+    background-color: yellow;
+
+}
+
+.dark{
+    background-color:darkgreen;
+    transition: background-color .5s;
+  }
+
+.box{
+    padding: 20px;
+    background: green;
+    color: rgb(1, 1, 1);
+    font-size: 20px;
+    height: 100vh;
+    top: 0;
+    position: fixed;
+    right:-300px;
+    width: 300px;
+    border-left: 2px solid;
+    transition: right .5s;
+
+}
+
+.active {
+   right: 0px;
+   
+  }
+
+  button {
+    padding: 10px;
+    border: 3px solid;
+    cursor:grab;
+    background-color: blue;
+    transition: background-color 2s;
+  }
+ 
+  button:hover {
+    background-color: blueviolet;
+  }
+
+  button:active {
+    background-color: brown;
+  }
+
+  .obj {
+    background-color: rgb(78, 255, 255);
+    border: 100px solid;
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    transition: all 2s;
+
+  }
+
+  .spin {
+    transform: rotate(360deg);
+    background-color: antiquewhite;
+  }
+
+
