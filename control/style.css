@@ -21,20 +21,10 @@ body{
 
 
 
-.square{
-  width: 60px;
-  height: 60px;
-  justify-content: center;
-  margin-top: 60px;
-  background-color: black;
-  display: flex;
-  text-align: center;
-
-}
 
 .button {
   background-color: #1c87c9;
-  border-radius: 60px;
+  border-radius: 20px;
   border: none;
   color: #f82424;
   cursor: pointer;
